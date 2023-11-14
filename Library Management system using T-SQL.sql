@@ -2,7 +2,6 @@
 * File: Dagogo_Orifama.sql
 * Title: Design and Implementation of a Library Database Management System (LMS) using TSQL
 * Author: Dagogo Orifama
-* StudentID: @00704109
 * Module: Advanced Databases
 * -------------------------------------------------------------------------------
 * *****************************************Description***************************
@@ -718,7 +717,8 @@ GO
 GRANT CONNECT TO CHRISDANIEL;
 GO
 
---Grant CHRISDANIEL SELECT permissions on the tables, functions, stored procedures and views within the schema dbo schemaGRANT SELECT ON SCHEMA :: dbo TO CHRISDANIEL;
+--Grant CHRISDANIEL SELECT permissions on the tables, functions, stored procedures and views within the schema dbo schema
+GRANT SELECT ON SCHEMA :: dbo TO CHRISDANIEL;
 GO
 
 -- Create login with the password specified for another user
